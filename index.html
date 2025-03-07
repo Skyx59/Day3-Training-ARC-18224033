@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="rectangle">
+          <div class="purple">
+              <div class="logo"> SkyXchange </div>
+          </div>
+          <div class="blue"></div>
+      </div>
+  </header>
+
+  <div class="menu" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+    <div class="wrapper">
+      <div class="app-details">
+        <img src="exchange2.png" class="app-icon" />
+        <h1 class="app-title">Currency Converter</h1>
+      </div>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="100" />
+      <div class="dropdowns">
+        <select id="from-currency-select"></select>
+        <select id="to-currency-select"></select>
+      </div>
+      <button id="convert-button">Convert</button>
+      <p id="result"></p>
+    </div>
+   
+    <script src="script.js"></script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+        }
+    </script>      
+  </body>
+</html>
